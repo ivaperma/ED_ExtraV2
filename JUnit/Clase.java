@@ -3,6 +3,9 @@ package es.edix.ed.recuperacion;
 import org.junit.platform.commons.util.StringUtils;
 
 /**
+ * Esta clase consta de dos m√©todos;
+ * Saludar() que devuelve un saludo y Matem√°ticas() que realiza una operaci√≥n matem√°tica entre dos n√∫meros enteros.
+ * 
  * @author Ivan
  * @since 26/6/2021
  * @version 3.0
@@ -12,19 +15,23 @@ public class Clase {
 	//Variable de tipo constante que no se puede sobreescribir
 	private static final String NFE = "Lo que me mandas es un numero"; 
 	//Variable de tipo constante que no se puede sobreescribir			
-	private static final String BLANK = "Lo que me mandas est· vacÌo"; 
+	private static final String BLANK = "Lo que me mandas est√° vac√≠o"; 
 
 	/**
-	 * El mÈtodo saludar intenta convertir a un n˙mero entero el String nombre, si lo consigue nos devuelve
-	 * la cadena de texto NFE, si no lo consigue captura una excepciÛn y mira si el nombre est· vacÌo. Si lo
-	 * est· devuelve la cadena de texto BLANK. Si no puedo convertirlo y no estaba vacÌo devuelve "Hola " +nombre.
+	 * El m√©todo saludar intenta convertir a un n√∫mero entero el String nombre, si lo consigue nos devuelve
+	 * la cadena de texto NFE, si no lo consigue captura una excepci√≥n y mira si el nombre est√° vac√≠o. Si lo
+	 * est√° devuelve la cadena de texto BLANK. Si no puedo convertirlo y no estaba vac√≠o devuelve "Hola " +nombre.
 	 * 
-	 * @param nombre Primera variable de entrada que se va a evaluar, debe ser un texto sin n˙meros, si no produce un error.
-	 * Integer.parseInt(nombre) Intenta convertir el nombre en un n˙mero entero	
-	 * @return NFE Devuelve la cadena de texto que contiene NFE = "Lo que me mandas es un numero"
-	 * @throws NumberFormatException e Captura la excepciÛn y chequea que el nombre no estÈ vacÌo
-     * @return BLANK Devuelve la cadena de texto que contiene BLANK = "Lo que me mandas est· vacÌo"
-     * Devuelve un saludo en formato 'Hola ...' en caso de que el nombre sea v·lido y no contenga n˙meros.
+	 * @param nombre Primera variable de entrada que se va a evaluar, debe ser un texto sin n√∫meros, si no produce un error.
+	 * @return 
+	 * <ul>
+	 * 	<li> Intenta convertir el nombre en un n√∫mero entero, si lo consigue nos devuelve el texto: <br>
+	 * 	'Lo que me mandas es un n√∫mero'. <br>
+	 * 	<li> Si no enviamos ning√∫n nombre env√≠a el texto: <br>
+	 * 	'Lo que me mandas est√° vac√≠o' <br>
+	 * 	<li> Si no consigue convertir el nombre a n√∫mero y el nombre es correcto devuelve: <br>
+	 * 	"Hola " +nombre <br>
+	 * </ul>
      * 
 	 */
 	
@@ -41,12 +48,12 @@ public class Clase {
 	} // Cierre de constructor
 
 	/**
-	 * Estructura de control switch case que eval˙a y realiza operaciones de
-	 * suma, resta, multiplicaciÛn y divisiÛn.
+	 * M√©todo que permite realizar una operaci√≥n matem√°tica sumar,restar,multiplicar o dividir.
 	 * 
-	 * @param x Primer valor de la operaciÛn que se va a ejecutar
-	 * @param y Segundo valor de la operaciÛn que se va a ejecutar
-	 * @param op Nombre de la operaciÛn que vamos a realizar, debe estar en min˙scula, si no darÌa error.
+	 * 
+	 * @param x Primer valor de la operaci√≥n que se va a ejecutar
+	 * @param y Segundo valor de la operaci√≥n que se va a ejecutar
+	 * @param op Nombre de la operaci√≥n que vamos a realizar, debe estar en min√∫scula, si no dar√≠a error.
 	 * @return Sumar x + y, Restar x - y, Multiplicar x * y, Dividir x / y
 	 */
 	public double matematicas(int x, int y, String op) { //Estructura de control switch case
